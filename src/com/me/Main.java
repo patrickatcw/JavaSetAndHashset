@@ -109,7 +109,52 @@ public class Main {
             //step 18 run to test.....good shape
         }
 
+        System.out.println("---------------------------------------------------");
+
+        //step 19 creating all moons object with a new instance
+        Set<HeavenlyBody> moons = new HashSet<HeavenlyBody>();
+        for(HeavenlyBody planet : planets){
+            moons.addAll(planet.getSatellites());
+        }
+        //step 20 printout
+        System.out.println("All Moons");
+        for(HeavenlyBody moon : moons){
+            System.out.println("\t" + moon.getName());
+            //step 21 run to test.....heck yeah!
+        }
+
     }
 
-
 }
+
+/*program results;
+Planets
+	Venus
+	Pluto
+	Uranus
+	Earth
+	Mercury
+	Neptune
+	Saturn
+	Jupiter
+	Mars
+---------------------------------------------------
+Moons of Jupiter
+	Ganymede
+	Io
+	Europa
+	Callisto
+---------------------------------------------------
+Moons of Mars
+	Phobos
+	Deimos
+---------------------------------------------------
+All Moons
+	Ganymede
+	Moon
+	Io
+	Europa
+	Phobos
+	Callisto
+	Deimos
+ */
