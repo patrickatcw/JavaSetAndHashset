@@ -91,12 +91,22 @@ public class Main {
 
         System.out.println("---------------------------------------------------");
 
-        //step 15 code for printing moon for Jupiter
+        //step 15 code for printing moons for Jupiter
         HeavenlyBody body = solarSystem.get("Jupiter"); //grabbing planet jupiter
         System.out.println("Moons of " + body.getName());
         for (HeavenlyBody jupiterMoon : body.getSatellites()){
             System.out.println("\t" + jupiterMoon.getName());
             //step 16 run to test.....good shape
+        }
+
+        System.out.println("---------------------------------------------------");
+
+        //step 17 code for printing moons for Mars
+        HeavenlyBody body2 = solarSystem.get("Mars"); //grabbing planet Mars
+        System.out.println("Moons of " + body2.getName());
+        for (HeavenlyBody marsMoon : body2.getSatellites()){
+            System.out.println("\t" + marsMoon.getName());
+            //step 18 run to test.....good shape
         }
 
     }
