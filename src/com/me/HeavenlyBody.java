@@ -20,4 +20,27 @@ public final class HeavenlyBody {
         this.satellites = new HashSet<HeavenlyBody>();
     }
 
+    //step 6 getters for all
+    public String getName() {
+        return name;
+    }
+
+    public double getOrbitalPeriod() {
+        return orbitalPeriod;
+    }
+
+    public Set<HeavenlyBody> getSatellites() {
+        //return satellites;
+        //step 7 put this in manually.....
+        return new HashSet<HeavenlyBody>(this.satellites);
+    }
+
+    //step 8 method to add moon
+    public boolean addMoon(HeavenlyBody moon) {
+        return this.satellites.add(moon);
+
+        //step 9 to main
+
+    }
+
 }
