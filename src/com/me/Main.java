@@ -89,6 +89,15 @@ public class Main {
             //step 14 run to test...good shape
         }
 
+        System.out.println("---------------------------------------------------");
+
+        //step 15 code for printing moon for Jupiter
+        HeavenlyBody body = solarSystem.get("Jupiter"); //grabbing planet jupiter
+        System.out.println("Moons of " + body.getName());
+        for (HeavenlyBody jupiterMoon : body.getSatellites()){
+            System.out.println("\t" + jupiterMoon.getName());
+            //step 16 run to test.....good shape
+        }
 
     }
 
